@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Angular-UI-Grid Test</title>
+ 
+	  <script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="node_modules/angular/angular.js"></script>
+	  <script src="node_modules/angular-ui-grid/ui-grid.js"></script>
+	  <script src="node_modules/ui-grid-custom-cell-select/js/custom-cell-select.js"></script>
+	  
+	  
+    <link rel="stylesheet" href="node_modules/angular-ui-grid/ui-grid.css" />
+	  <link rel="stylesheet" href="node_modules/ui-grid-custom-cell-select/less/custom-cell-select.css" />
+    <script src="includes/app.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+    <div ui-grid="gridOptions" id="uiGrid" ui-grid-cellnav ui-grid-custom-cell-select ui-grid-edit ui-grid-pagination class="grid"></div>
+    <div class="well">
+      <h2>Custom Cell Selection Plugin</h2>
+      <p>
+        Directions: 
+        <ol>
+          <li>Focus the preview window by clicking within it (plnkr has event issues if you don't).</li>
+          <li>Click and drag on the grid to select an area of cells.</li>
+          <li>Ctrl+C to copy</li>
+        </ol>
+        
+      </p>
+    </div>
+  </body>
+
+</html>
